@@ -255,7 +255,7 @@ body {
     border-radius: 2px;
     display: inline-block;
     vertical-align: middle;
-    margin: 0 12px 0 10px;
+    margin: auto 10px;
     position: relative;
     z-index: 1;
     color: #c4c4cf;
@@ -282,16 +282,12 @@ body {
 
 }
 .hacom_header_cart_left{
-    display: flex;
-    background-color: #ffff;
-    color: #747474;
-    font-size: 2rem;
-    width: 100%;
+  
     margin-right: 10px;
-    justify-content: space-between;
-    height: 45px;
-    align-items: center;
-    border-radius: 10px;
+   
+}
+.products_hacom {
+    display: flex;
 }
 .hacom_herder_cart_top {
     display: flex;
@@ -479,4 +475,65 @@ body {
     color: #fff;
     font-size: 2rem;
     cursor: pointer;
+}
+.hacom_cart_list_item{
+    display: flex;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+
+}
+.cart_new_products {
+    display: flex
+}
+.cart_new_products > a {
+    width: 125px;
+    margin: auto;
+    margin-right: 10px;
+}
+.cart_new_products > a > img {
+    max-width: 100%;
+    height: auto;
+}
+.cart_n_p_info{
+    font-size: 1.7rem;
+    max-width: 280px;
+    width: 279px;
+    padding: 10px;   
+}
+.cart_n_p_info > a {
+    text-decoration: none;
+    color: #242424;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.cart_n_p_sku{
+    display: block;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.cart_n_p_sku > b {
+    color: #64686b;
+}
+.cart_n_p_offer > .cart_n_offer_title {
+    border: 1px solid #f5eaea;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 35px;
+    cursor: pointer;
+    margin: 15px 0px;
+    color: #747474;
+}
+.cart_n_p_offer > a {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #f5eaea;
+    color: #747474;
+    width: 180px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px;
 }
