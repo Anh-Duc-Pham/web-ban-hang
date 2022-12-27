@@ -14,6 +14,11 @@ html {
   width: 100%;
   font-size: 1.3rem;
 }
+#section-showroom .showroom-body {
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+}
 #section-showroom h2 {
   margin-top: 20px;
   text-align: center;
@@ -35,10 +40,10 @@ html {
   padding: 10px;
 }
 #section-showroom .showroom-title .NameSR {
-  width: 300px;
+  width: 325px;
 }
 #section-showroom .showroom-content .addressSR {
   font-weight: bold;
 }
 
-/*# sourceMappingURL=showroom.css.map */
+/*# sourceMappingURL=style.css.map */

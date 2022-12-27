@@ -5,7 +5,6 @@ import RESTfulAPI from "./modules/client/RESTfulAPI.js";
 var showroom = [];
 
 const displayShowroom = (showrooms) => {
-  let html = "";
   let renderDiv = document.querySelector(".showroom-body");
   renderDiv.innerHTML = "";
   showrooms.forEach((showroom) => {
@@ -43,6 +42,7 @@ const displayShowroom = (showrooms) => {
 
     SRHeader.append(idShowroom, NameShowroom);
     SRbody.append(AddressShowroom, EmailShowroom, telShowroom);
+
     Div.append(SRHeader, SRbody);
     renderDiv.appendChild(Div);
   });
