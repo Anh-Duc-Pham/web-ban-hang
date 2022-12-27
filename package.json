@@ -18,5 +18,8 @@
   "homepage": "https://github.com/buivannguyen/hacomwebsite#readme",
   "devDependencies": {
     "eslint": "^8.30.0"
+  },
+  "dependencies": {
+    "sass": "^1.57.1"
   }
 }
