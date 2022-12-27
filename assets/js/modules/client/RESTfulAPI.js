@@ -7,6 +7,9 @@ class RESTfulAPI {
   async send(method, data) {
     let getData = await fetch(host + this.resourcePath, {
       method,
+      headers: {
+        "content-type": "application/json"
+      },
       body: data == "" || data == null ? null : JSON.stringify(data),
     });
     let res = await getData.json();
@@ -15,11 +18,11 @@ class RESTfulAPI {
   /**
    * @returns <Promise> GET method
    */
-  async getData() {
+  async #getData() {
     return await this.send("GET");
   }
   get get() {
-    return this.getData();
+    return this.#getData();
   }
 }
 export default RESTfulAPI;
