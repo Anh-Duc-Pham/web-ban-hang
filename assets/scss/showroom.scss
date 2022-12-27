@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 html {
   font-size: 62.5%;
@@ -12,6 +12,12 @@ html {
 #section-showroom {
   width: 100%;
   font-size: 1.3rem;
+  .showroom-body {
+    width: 1600px;
+    
+    margin-right: auto;
+    margin-left: auto;
+  }
   h2 {
     margin-top: 20px;
     text-align: center;
@@ -25,6 +31,7 @@ html {
     }
   }
   .showroom-wrapper {
+   
     display: inline-block;
     margin: 20px;
   }
@@ -34,7 +41,7 @@ html {
       padding: 10px;
     }
     .NameSR {
-      width: 300px;
+      width: 325px;
     }
   }
   .showroom-content {
