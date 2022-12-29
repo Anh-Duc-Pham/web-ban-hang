@@ -1,0 +1,39 @@
+header .search-bar .search-input, header {
+  display: flex;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+}
+header .search-bar {
+  width: 75%;
+  border: 2px solid #ed1b24;
+  border-radius: 10rem;
+  overflow: hidden;
+}
+header .search-bar .search-input {
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  height: 3rem;
+  background-color: #fff;
+  border: none;
+}
+header .search-bar button {
+  background-color: #ed1b24;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  padding: 0 2rem;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

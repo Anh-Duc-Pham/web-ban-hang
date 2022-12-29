@@ -1,0 +1,25 @@
+@import "_params";
+header{
+  @include flex(space-between, center);
+  .search-bar{
+    width: 75%;
+    border: 2px solid #ed1b24;
+    border-radius: 10rem;
+    overflow: hidden;
+    .search-input{
+      padding: 0 2rem;
+      font-size: 1.2rem;
+      height: 3rem;
+      background-color: #fff;
+      border: none;
+      @extend %d-flex;
+    }
+    button{
+      background-color: #ed1b24;
+      border: none;
+      color: #fff;
+      font-weight: 400;
+      padding: 0 2rem;
+    }
+  }
+}
