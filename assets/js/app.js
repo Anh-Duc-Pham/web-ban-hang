@@ -1,7 +1,5 @@
 import headerComponent from "./modules/components/headerComponent.js";
-import asyncComponents from "./modules/components/asyncComponents.js";
 import RESTfulAPI from "./modules/client/RESTfulAPI.js";
-import abc from "./modules/components/comp.js";
 const app = {
   $: document.querySelector.bind(document),
   $$: document.querySelectorAll.bind(document),

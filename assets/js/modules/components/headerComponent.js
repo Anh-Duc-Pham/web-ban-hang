@@ -1,7 +1,11 @@
 class headerComponent {
   constructor(component, wrapElement) {
     this.component = component;
-    this.wrapElement = wrapElement;
+    if (wrapElement == "" || wrapElement == null) {
+      this.wrapElement = document.body;
+    } else {
+      this.wrapElement = wrapElement;
+    }
   }
   #tag(htmlTag) {
     return document.createElement(htmlTag);
@@ -26,7 +30,7 @@ class headerComponent {
     let buttonElement = this.#tag("button");
     let linkElement = this.#tag("a");
     let divElement = this.#tag("div");
-    let pElement = this.#tag("p");
+    let spanElement = this.#tag("span");
     return {
       headerElement,
       imgElement,
@@ -35,7 +39,7 @@ class headerComponent {
       buttonElement,
       linkElement,
       divElement,
-      pElement,
+      spanElement,
     };
   }
   #brand() {
@@ -70,20 +74,52 @@ class headerComponent {
     userLink.href = "#";
     userLink.innerText = "đăng nhập";
     userLink.append(userImg);
+    container.className = "user-login";
     container.append(userLink);
     return container;
   }
-  #notification() {}
-  #cart() {}
+  #notification() {
+    let { notificationIcon } = this.#getAttribute();
+    let eles = this.#createElements();
+    let notiLink = eles.linkElement;
+    let notiImg = eles.imgElement;
+    let notiDisplay = eles.divElement;
+    notiImg.src = notificationIcon;
+    notiLink.className = "noti-link";
+    notiLink.href = "#";
+    notiLink.append(notiImg);
+    notiDisplay.className = "noti-display";
+    return { notiLink, notiDisplay };
+  }
+  #cart() {
+    let { cartIcon } = this.#getAttribute();
+    let eles = this.#createElements();
+    let cartLink = eles.linkElement;
+    let cartImg = eles.imgElement;
+    let cartDisplay = eles.divElement;
+    cartImg.src = cartIcon;
+    cartLink.href = "#";
+    cartLink.className = "cart-link";
+    cartLink.innerHTML = `Giỏ hàng của bạn có (<span id="cartCounter">0</span>) sản phẩm`;
+    cartLink.append(cartImg);
+    cartDisplay.className = "cart-display";
+    return { cartLink, cartDisplay };
+  }
 
   #createHeaderElement() {
     let { headerElement } = this.#createElements();
     let brand = this.#brand();
     let searchBar = this.#searchBar();
     let user = this.#user();
-    let notification = this.#notification();
-    let cart = this.#cart();
-    headerElement.append(brand, searchBar, user, notification, cart);
+    let { notiLink, notiDisplay } = this.#notification();
+    let { divElement: notifications } = this.#createElements();
+    notifications.className = "notifications";
+    notifications.append(notiLink, notiDisplay);
+    let { cartLink, cartDisplay } = this.#cart();
+    let { divElement: cart } = this.#createElements();
+    cart.className = "cart";
+    cart.append(cartLink, cartDisplay);
+    headerElement.append(brand, searchBar, user, notifications, cart);
     this.component.remove();
     return this.wrapElement.append(headerElement);
   }
