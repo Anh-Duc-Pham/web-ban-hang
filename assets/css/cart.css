@@ -505,6 +505,10 @@ body {
     text-decoration: none;
     color: #242424;
     line-height: 30px;
+<<<<<<< HEAD:assets/css/cart.css
+=======
+    letter-spacing: 1px;
+>>>>>>> aa67dc41a1ee09d6fac392983711cccd76d4cfe7:acsets/css/style.css
 }
 .cart_n_p_sku{
     display: block;
@@ -535,6 +539,7 @@ body {
     height: 35px;
     line-height: 35px;
     border-radius: 5px;
+<<<<<<< HEAD:assets/css/cart.css
 }
 .cart_new_price{
     display: flex;
@@ -596,3 +601,6 @@ body {
     text-decoration: none;
     color: #747474;
 }
+=======
+}
+>>>>>>> aa67dc41a1ee09d6fac392983711cccd76d4cfe7:acsets/css/style.css
