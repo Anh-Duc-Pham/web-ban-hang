@@ -1,0 +1,33 @@
+{
+  "users": {
+    "customers": [
+      {"id": 1, "userID": 1, "name": "nguyen van a", "password": "123", "mail": "nva@mail.com"}
+    ],
+    "employees": [
+      {"id": 1, "userID": 1, "name": "admin", "password": "admin", "mail": "admin@mail.com"}
+    ]
+  },
+  "posts": [],
+  "products": {
+      "laptop": [
+        {
+          "id": 1,
+          "title": "laptop",
+          "name": "laptop ASUS abc",
+          "type": "laptop gaming",
+          "brand": "asus",
+          "cpu": "intel core i7",
+          "monitorSize": 16,
+          "price": 18000000
+        }
+      ],
+      "pc-set": []
+    },
+  "advertisements": {
+    "banners": [],
+    "ads":[]
+  },
+  "cart": [
+    {"id": 1, "userID": 1, "productID": 1, "price": 1200000 }
+  ]
+}

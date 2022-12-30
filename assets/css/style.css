@@ -1,49 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+header .search-bar .search-input, header {
+  display: flex;
 }
 
-html {
-  font-size: 62.5%;
+header {
+  justify-content: space-between;
+  align-items: center;
+}
+header .search-bar {
+  width: 75%;
+  border: 2px solid #ed1b24;
+  border-radius: 10rem;
+  overflow: hidden;
+}
+header .search-bar .search-input {
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  height: 3rem;
+  background-color: #fff;
+  border: none;
+}
+header .search-bar button {
+  background-color: #ed1b24;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  padding: 0 2rem;
 }
 
-#section-showroom {
-  width: 100%;
-  font-size: 1.3rem;
+body {
+  background-color: #f4f4f4;
 }
-#section-showroom .showroom-body {
-  width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
-}
-#section-showroom h2 {
-  margin-top: 20px;
-  text-align: center;
-}
-#section-showroom h2::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 200px;
-  background: #333;
-  margin: auto;
-}
-#section-showroom .showroom-wrapper {
-  display: inline-block;
-  margin: 20px;
-}
-#section-showroom .showroom-title p {
-  display: inline-block;
-  padding: 10px;
-}
-#section-showroom .showroom-title .NameSR {
-  width: 325px;
-}
-#section-showroom .showroom-content .addressSR {
-  font-weight: bold;
+
+.wrap {
+  width: 80%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
